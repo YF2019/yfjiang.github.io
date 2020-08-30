@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="其他," />
+  <meta name="keywords" content="数据库," />
 
 
 
@@ -123,16 +123,16 @@
 
 
 
-<meta name="description" content="摘要:">
+<meta name="description" content="MySQL 数据库的三大范式     第一范式：每一列都不可以再分； 第二范式：满足第一范式，所有非主属性都完全依赖于主键。主键约束； 第三范式：满足第二范式，表的非主属性不能依赖于其他表的非主属性。外键约束。   ACID     原子性atomicity：一个事务必须被视为一个单独的内部不可再分的工作单元，以保证整个事务要么全部执行，要么全部回滚。   一致性consistency：数据库总是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何在github上创建个人博客？">
-<meta property="og:url" content="http://yoursite.com/2020/05/27/test2/index.html">
+<meta property="og:title" content="MySQL">
+<meta property="og:url" content="http://yoursite.com/2020/08/30/MySQL/index.html">
 <meta property="og:site_name" content="YF&#39;s Blog">
-<meta property="og:description" content="摘要:">
-<meta property="article:published_time" content="2020-05-26T17:13:43.000Z">
-<meta property="article:modified_time" content="2020-05-26T17:13:43.000Z">
+<meta property="og:description" content="MySQL 数据库的三大范式     第一范式：每一列都不可以再分； 第二范式：满足第一范式，所有非主属性都完全依赖于主键。主键约束； 第三范式：满足第二范式，表的非主属性不能依赖于其他表的非主属性。外键约束。   ACID     原子性atomicity：一个事务必须被视为一个单独的内部不可再分的工作单元，以保证整个事务要么全部执行，要么全部回滚。   一致性consistency：数据库总是">
+<meta property="article:published_time" content="2020-08-30T12:53:46.000Z">
+<meta property="article:modified_time" content="2020-08-30T12:53:46.000Z">
 <meta property="article:author" content="Yefan Jiang">
-<meta property="article:tag" content="其他">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
 
 
@@ -163,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/05/27/test2/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/08/30/MySQL/"/>
 
 
 
 
 
-  <title>如何在github上创建个人博客？ | YF's Blog</title>
+  <title>MySQL | YF's Blog</title>
   
 
 
@@ -316,7 +316,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/27/test2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/30/MySQL/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yefan Jiang">
@@ -333,7 +333,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">如何在github上创建个人博客？</h1>
+          <h1 class="post-title" itemprop="name headline">MySQL</h1>
         
 
         <div class="post-meta">
@@ -345,8 +345,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-27T01:13:43+08:00">
-                2020-05-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-30T20:53:46+08:00">
+                2020-08-30
               </time>
             
 
@@ -368,19 +368,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%85%B6%E4%BB%96/github/" itemprop="url" rel="index">
-                    <span itemprop="name">github</span>
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
                   </a>
                 </span>
 
@@ -396,7 +385,7 @@
 
           
           
-             <span id="/2020/05/27/test2/" class="leancloud_visitors" data-flag-title="如何在github上创建个人博客？">
+             <span id="/2020/08/30/MySQL/" class="leancloud_visitors" data-flag-title="MySQL">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -427,9 +416,140 @@
       
 
       
-        <p>摘要:</p>
-<a id="more"></a>
-<p>正文:</p>
+        <h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h1><ol>
+<li>数据库的三大范式  </li>
+</ol>
+<ul>
+<li>第一范式：每一列都不可以再分；</li>
+<li>第二范式：满足第一范式，所有非主属性都完全依赖于主键。主键约束；</li>
+<li>第三范式：满足第二范式，表的非主属性不能依赖于其他表的非主属性。外键约束。</li>
+</ul>
+<ol start="2">
+<li>ACID  </li>
+</ol>
+<ul>
+<li>原子性atomicity：一个事务必须被视为一个单独的内部不可再分的工作单元，以保证整个事务要么全部执行，要么全部回滚。  </li>
+<li>一致性consistency：数据库总是从一种一致性状态转换到另一种一致性状态。</li>
+<li>隔离性isolation：某个事务的结果只有在完成之后才对其他事务可见。</li>
+<li>持久性durability：一旦一个事务提交，事务所做的数据改变是永久的。</li>
+</ul>
+<ol start="3">
+<li>隔离级别</li>
+</ol>
+<ul>
+<li>read uncommited （读取未提交内容）:所有事务都可以“看到”未提交的事务的结果。可能导致脏读</li>
+<li>read commited（读取提交内容）：可能用户运行同一语句两次，看到结果不同。</li>
+<li>repeatable read（可重复读）：解决了脏读导致的问题，确保同一个事务在并发读取数据时，会“看到同样的”数据行。但是会产生幻读，导致当用户读取某一范围的数据行时，另一个事务又在该范围内插入了新行，当用户再读取该范围的数据行时，出现新的“幻影”行。（是MySQL INnoDB的默认事务管理级 select @@tx_isolation）</li>
+<li>serializable（可串行化）：强制事务排序，使之不可能相互冲突，从而解决幻读问题。做法是在每个读的数据行上加锁。  </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>隔离级别</th>
+<th>脏读</th>
+<th>不可重复读</th>
+<th>幻读</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>读取未提交</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>读取已提交</td>
+<td>×</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>可重复读</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>串行化</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+</tbody></table>
+<ol start="4">
+<li>数据库的引擎<br>常用包括：MYISAM，Innodb, Memory, MERGE  </li>
+</ol>
+<ul>
+<li>InnoDB：支持事务处理，支持外键，支持崩溃修复能力和并发控制。如果需要对事务的完整性要求比较高（比如银行），要求实现并发控制（比如售票），那选择InnoDB有很大的优势。如果需要频繁的更新、删除操作的数据库，也可以选择InnoDB，因为支持事务的提交（commit）和回滚（rollback）。  </li>
+<li>MYISAM：插入数据快，空间和内存使用比较低。如果表主要是用于插入新记录和读写记录（如博客系统、新闻门户网站），那么选择MyISAM能实现处理高效率。如果应用的完整性、并发性要求比较低，也可以使用.  </li>
+<li>Memory：所有的数据都在内存中，数据的处理速度快，但是安全性不高。如果需要很快的读写速度，对数据的安全性要求较低，可以选择MEMOEY。它对表的大小有要求，不能建立太大的表。所以，这类数据库只使用在相对较小的数据库表。</li>
+</ul>
+<ol start="5">
+<li>索引问题  </li>
+</ol>
+<ul>
+<li>主键索引：数据列不允许重复、不允许NULL，一个表只能有一个主键；</li>
+<li>唯一索引：数据列不允许重复，允许NULL，一个表允许多个列创建唯一索引；</li>
+<li>普通索引</li>
+<li>全文索引<br>索引缺点：索引会增加数据库的存储空间；插入和删除时要花费较多的时间维护<br>索引优点：1.加快数据库的检索速度；2.降低了插入、删除、修改等维护任务的速度；3.唯一索引可以确保每一行数据的唯一性；4.通过使用索引，可以在查询过程中使用优化隐藏器，提高系统性能.</li>
+</ul>
+<ol start="6">
+<li>SQL优化<br><a href="https://blog.csdn.net/qq_38789941/article/details/83744271" target="_blank" rel="noopener">https://blog.csdn.net/qq_38789941/article/details/83744271</a><br>主要还是涉及到一些操作是否会走索引的问题。</li>
+<li>drop delete truncate的区别  </li>
+</ol>
+<ul>
+<li>delete语句为DML（data maintain Language),这个操作会被放到 rollback segment中,事务提交后才生效。如果有相应的 tigger,执行的时候将被触发。truncate、drop是DLL（data define language),操作立即生效，原数据不放到 rollback segment中，不能回滚。</li>
+<li>当表被TRUNCATE 后，这个表和索引所占用的空间会恢复到初始大小。DELETE操作不会减少表或索引所占用的空间。drop语句将表所占用的空间全释放掉。</li>
+<li>TRUNCATE 只能对TABLE。DELETE可以是table和view。TRUNCATE 和DELETE只删除数据， DROP则删除整个表（结构和数据）</li>
+<li>一般而言，drop &gt; truncate &gt; delete</li>
+</ul>
+<ol start="8">
+<li>并发事务带来的问题</li>
+</ol>
+<ul>
+<li>脏读：一个事务读取到另一个事务未提交的数据</li>
+<li>丢失修改：两个事务读取一个数据，第一个事务修改了某数据，第二个也修改了，导致第一个事务的修改丢失；</li>
+<li>不可重复读：在一个事务内两次读到的数据不一样</li>
+<li>幻读：类似不可重复读（一个是修改了，一个是增删了）。一个事务读到了一些原本不存在的记录。</li>
+</ul>
+<ol start="9">
+<li>大表优化<br>当MySQL单表记录过大时，CRUD性能会下降，优化措施如下：</li>
+</ol>
+<ul>
+<li>限定数据的范围：务必禁止不带任何数据范围条件的查询语句；</li>
+<li>读写分离：主库写，从库读；</li>
+<li>垂直分区：根据数据库里数据表的相关性进行拆分，成为多表<br>优点：数据变小，查询时减少读取的block数，减少IO。简化表的结构，便于维护；<br>缺点：主键会出现冗余，需要管理冗余列。垂直分区会让事务更加复杂。</li>
+<li>水平分区：保持数据表结构不变，通过某种策略存储数据分片。这样每一片的数据分散到不同的表或者库中，达到分布式的目的。<br>优点：支持非常大的数据量存储，应用端改造少；<br>缺点：分片事务难以解决，会带来逻辑、部署、运维的复杂度。</li>
+</ul>
+<ol start="10">
+<li>分库分表后，ID主键如何处理？<br>分成多表后，需要全局唯一ID来支持。</li>
+</ol>
+<ul>
+<li>UUID：不适合，查询效率低</li>
+<li>数据库自增id：生成的id有序，但是需要独立部署数据库实例，成本高，有性能瓶颈；</li>
+<li>redis生成id：性能好，不依赖于数据库。但是导致系统复杂，可用性降低，增加系统成本；</li>
+<li>美团的leaf分布式id生成系统</li>
+</ul>
+<ol start="11">
+<li>MySQL有关权限的表<br>MySQL服务器通过权限表来控制用户对数据库的访问，权限表存放在mysql数据库里，由mysql_install_db脚本初始化。这些权限表分别user，db，table_priv，columns_priv和host。下面分别介绍一下这些表的结构和内容：</li>
+</ol>
+<ul>
+<li>user权限表：记录允许连接到服务器的用户帐号信息，里面的权限是全局级的。</li>
+<li>db权限表：记录各个帐号在各个数据库上的操作权限。</li>
+<li>table_priv权限表：记录数据表级的操作权限。</li>
+<li>columns_priv权限表：记录数据列级的操作权限。</li>
+<li>host权限表：配合db权限表对给定主机上数据库级操作权限作更细致的控制。这个权限表不受GRANT和REVOKE语句的影响。</li>
+</ul>
+<ol start="12">
+<li>MySQL的数据类型</li>
+</ol>
+<ul>
+<li>整数类型</li>
+<li>实数类型：float，double，decimal</li>
+<li>字符串类型：varchar,char,text,blob<br>varchar用于存储可变长字符串，比定长更省空间，当超出设置的长度会被截断。char是定长的，会根据需要使用空格填充，超出长度也会被截断<br>对于经常变更的数据，char比varchar好，前者不容易产生碎片。对于非常短的列，char比varchar在存储空间上更有效率。尽量避免使用text和blob</li>
+<li>枚举类型：enum</li>
+<li>日期和时间类型</li>
+</ul>
 
       
     </div>
@@ -447,7 +567,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E5%85%B6%E4%BB%96/" rel="tag"># 其他</a>
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"># 数据库</a>
           
         </div>
       
@@ -460,15 +580,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/08/30/Java%E5%9F%BA%E7%A1%80/" rel="next" title="Java基础">
+                <i class="fa fa-chevron-left"></i> Java基础
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/05/29/%E4%BA%8C%E8%BF%9B%E5%88%B6%E3%80%81%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97%E8%AF%A6%E8%A7%A3/" rel="prev" title="二进制、逻辑运算与位运算详解">
-                二进制、逻辑运算与位运算详解 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -520,8 +640,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -601,6 +730,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL"><span class="nav-number">1.</span> <span class="nav-text">MySQL</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
