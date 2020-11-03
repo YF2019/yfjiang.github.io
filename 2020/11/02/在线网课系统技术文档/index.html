@@ -132,6 +132,10 @@
 <meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/c85d9d86-c9f3-44b8-a714-590c826cfd64/128/index_files/1bb0cd7a29b6b1bcf3c569e2441efcec.png">
 <meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/c85d9d86-c9f3-44b8-a714-590c826cfd64/128/index_files/7509966.png">
 <meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/46b1441b-7480-4673-992b-f69c209798d5/128/index_files/0.9177152660737906.png">
+<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/148a52f0-2c98-4e1b-b85b-5bcd68d35c7b/128/index_files/0.8804617085856941.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7632302-0b09dd85b8baa318.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/790/format/webp">
+<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/a2b3bd60-a793-4e07-b65b-147ea6f09639/128/index_files/59809c07-0923-4546-aa83-ed920f53a3a5.jpg">
+<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/a2b3bd60-a793-4e07-b65b-147ea6f09639/128/index_files/d5be6f27-caff-45b6-8f27-837ea6b11134.jpg">
 <meta property="article:published_time" content="2020-11-02T13:41:19.000Z">
 <meta property="article:modified_time" content="2020-11-02T13:41:19.000Z">
 <meta property="article:author" content="Yefan Jiang">
@@ -463,7 +467,8 @@
 
 
 
-<h4 id="6-log4j"><a href="#6-log4j" class="headerlink" title="6.log4j"></a>6.log4j</h4><h4 id="7-ES6，ES5"><a href="#7-ES6，ES5" class="headerlink" title="7.ES6，ES5"></a>7.ES6，ES5</h4><p>Babel将ES6代码转为ES5</p>
+<h4 id="6-logback"><a href="#6-logback" class="headerlink" title="6.logback"></a>6.logback</h4><p>比log4j更好用</p>
+<h4 id="7-ES6，ES5"><a href="#7-ES6，ES5" class="headerlink" title="7.ES6，ES5"></a>7.ES6，ES5</h4><p>Babel将ES6代码转为ES5</p>
 <h4 id="8-Vue"><a href="#8-Vue" class="headerlink" title="8.Vue"></a>8.Vue</h4><p>用于构建用户界面的渐进式框架，允许采用简洁的模板语法来声明式地将数据渲染进 DOM 的系统.</p>
 <ul>
 <li><p>基本的语法</p>
@@ -475,10 +480,137 @@
 </li>
 </ul>
 <h4 id="9-axios"><a href="#9-axios" class="headerlink" title="9.axios"></a>9.axios</h4><p>axios 独立于vue 的一个项目，基于promise用于浏览器和node.js的http客户端</p>
+<p>Ajax: Asynchronous Javascript And XML（异步 JavaScript 和 XML），Ajax 的核心是 js 对象：<strong>XMLHttpRequest</strong></p>
+<p>一个完整的Http请求：</p>
+<ul>
+<li>请求的网址，请求的方法get/post</li>
+<li>提交请求的内容数据、请求主体等</li>
+<li>接收响应回来的内容</li>
+</ul>
+<p>发送Ajax请求的步骤</p>
+<ul>
+<li>创建异步对象，即XMLHttpRequest</li>
+<li>设置请求的参数，包括请求的方法、url 等</li>
+<li>发送请求</li>
+<li>注册事件</li>
+<li>获取返回的数据</li>
+</ul>
+<p>使用axios，在vue里实现Ajax操作，即前端向后端发送Ajax请求，后端返回数据给前端</p>
 <h4 id="10-element-ui"><a href="#10-element-ui" class="headerlink" title="10.element-ui"></a>10.element-ui</h4><p><a href="https://element.eleme.cn/#/zh-CN" target="_blank" rel="noopener">element-ui</a> 基于 Vue.js的后台组件库，方便进行页面快速布局和构建。基本上都是静态的方案，需要自己写动态的方案。</p>
-<h4 id="11-Node-js"><a href="#11-Node-js" class="headerlink" title="11.Node.js"></a>11.Node.js</h4><p>Node.js 就是运行在服务端的 JavaScript</p>
+<h4 id="11-Node-js"><a href="#11-Node-js" class="headerlink" title="11.Node.js"></a>11.Node.js</h4><p>Node.js 就是运行在服务端的 JavaScript，是其运行环境</p>
 <p>npm全称Node Package Manager，是node.js的包管理工具，相当于前端的maven</p>
-<h3 id="后台管理系统模块化"><a href="#后台管理系统模块化" class="headerlink" title="后台管理系统模块化"></a>后台管理系统模块化</h3><h4 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h4><h4 id="2-service-edu"><a href="#2-service-edu" class="headerlink" title="2.service-edu"></a>2.service-edu</h4><h2 id="三-前台服务系统"><a href="#三-前台服务系统" class="headerlink" title="三.前台服务系统"></a>三.前台服务系统</h2><h2 id="四-一些问题的出现与解决"><a href="#四-一些问题的出现与解决" class="headerlink" title="四.一些问题的出现与解决"></a>四.一些问题的出现与解决</h2><h3 id="跨域问题"><a href="#跨域问题" class="headerlink" title="跨域问题"></a>跨域问题</h3><p>浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都属于跨域。</p>
+<h4 id="12-vue-element-admin"><a href="#12-vue-element-admin" class="headerlink" title="12.vue-element-admin"></a>12.vue-element-admin</h4><p><a href="https://panjiachen.github.io/vue-element-admin-site/zh/guide/#%E5%8A%9F%E8%83%BD" target="_blank" rel="noopener">vue-element-admin</a> 是基于element-ui 的一套后台管理系统集成方案</p>
+<ul>
+<li>本项目基于 vue-admin-template-master（精简版）进行二次开发，进行前端项目的搭建。</li>
+<li>重命名为 college-admin，具体信息见 package.json</li>
+</ul>
+<h4 id="13-nginx"><a href="#13-nginx" class="headerlink" title="13.nginx"></a>13.nginx</h4><p>反向代理服务器</p>
+<ul>
+<li>请求转发。设置监听的端口，根据请求的路径进行匹配，进行服务器的转发。</li>
+<li>负载均衡</li>
+<li>动静分离</li>
+</ul>
+<h4 id="14-阿里云OSS"><a href="#14-阿里云OSS" class="headerlink" title="14.阿里云OSS"></a>14.阿里云OSS</h4><p>云存储微服务</p>
+<h4 id="15-EasyExcel"><a href="#15-EasyExcel" class="headerlink" title="15.EasyExcel"></a>15.EasyExcel</h4><p>EasyExcel 是阿里巴巴开源的一个excel处理框架，以使用简单、节省内存著称。EasyExcel 能大大减少占用内存的主要原因是在解析Excel时没有将文件数据一次性全部加载到内存中，而是从磁盘上一行行读取数据，逐个解析。</p>
+<h4 id="16-Tinymce可视化编辑器"><a href="#16-Tinymce可视化编辑器" class="headerlink" title="16.Tinymce可视化编辑器"></a>16.Tinymce可视化编辑器</h4><p>富文本编辑器</p>
+<h4 id="17-阿里云视频点播功能"><a href="#17-阿里云视频点播功能" class="headerlink" title="17.阿里云视频点播功能"></a>17.阿里云视频点播功能</h4><p><img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/148a52f0-2c98-4e1b-b85b-5bcd68d35c7b/128/index_files/0.8804617085856941.png" alt="视频点播"></p>
+<h4 id="18-微服务"><a href="#18-微服务" class="headerlink" title="18.微服务"></a>18.微服务</h4><p>微服务架构风格是一种使用一套小服务来开发单个应用的方式途径，每个服务运行在自己的进程中，并使用轻量级机制通信，通常是HTTP API，这些服务基于业务能力构建，并能够通过自动化部署机制来独立部署，这些服务使用不同的编程语言实现，以及不同数据存储技术，并保持最低限度的集中式管理。 </p>
+<p>本质：</p>
+<ul>
+<li>微服务和微服务之间在结构上松耦合，但是在功能上则为一个统一的整体：统一风格的界面、统一的权限管理、统一的安全策略、统一的上线过程、统一的日志和审计方法、统一的调度方式、统一的访问入口等。</li>
+<li>目的是有效的拆分应用，实现敏捷开发和部署</li>
+<li>inter-operate, not  integrate.</li>
+</ul>
+<p>与单体架构的区别：</p>
+<ul>
+<li>单体架构所有的模块耦合在一起，维护困难；微服务每个模块相当于一个单独的项目，更好维护</li>
+<li>单体架构所有的模块共用一个数据库，存储方式单一；微服务每个模块可以采用不同的存储方式，单个模块对应独自的数据库</li>
+<li>单体架构所有的模块开发使用的技术一样；微服务每个模块可以使用不同的开发技术，开发模式更灵活</li>
+</ul>
+<p><a href="http://projects.spring.io/spring-cloud" target="_blank" rel="noopener">spring cloud</a></p>
+<p>利用Spring Boot的开发便利性简化了分布式系统基础设施的开发，如服务发现、服务注册、配置中心、消息总线、负载均衡、 熔断器、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。</p>
+<ul>
+<li><p>服务发现——Netflix Eureka （Nacos）</p>
+</li>
+<li><p>服务调用——Netflix Feign </p>
+</li>
+<li><p>熔断器——Netflix Hystrix </p>
+</li>
+<li><p>服务网关——Spring Cloud GateWay </p>
+</li>
+<li><p>分布式配置——Spring Cloud Config  （Nacos）</p>
+</li>
+<li><p>消息总线 —— Spring Cloud Bus （Nacos）</p>
+</li>
+</ul>
+<h4 id="19-Nacos"><a href="#19-Nacos" class="headerlink" title="19.Nacos"></a>19.Nacos</h4><p><a href="https://nacos.io/zh-cn/docs/quick-start.html" target="_blank" rel="noopener">Nacos</a>  是阿里巴巴推出来的一个新开源项目，是一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。</p>
+<p>消费者、生产者均在nacos注册中心进行注册，消费者在需要的时候，可以在注册中心得到生产者的地址，从而调用生产者提供的方法。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/7632302-0b09dd85b8baa318.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/790/format/webp" alt=""></p>
+<h4 id="20-Feign"><a href="#20-Feign" class="headerlink" title="20.Feign"></a>20.Feign</h4><p>Feign是Netflix开发的声明式、模板化的HTTP客户端。可以更加快捷方便的调用Http API</p>
+<p>feign是声明式的web service客户端，它让微服务之间的调用变得更简单了，类似controller调用service。Spring Cloud集成了Ribbon和Eureka，可在使用Feign时提供负载均衡的http客户端。</p>
+<p>本项目中使用Feign调用微服务进行微服务交互操作</p>
+<h4 id="21-Hystrix"><a href="#21-Hystrix" class="headerlink" title="21.Hystrix"></a>21.Hystrix</h4><p>Hystrix 是一个供分布式系统使用，提供延迟和容错功能，保证复杂的分布系统在面临不可避免的失败时，仍能有其弹性。</p>
+<p>比如系统中有很多服务，当某些服务不稳定的时候，使用这些服务的用户线程将会阻塞，如果没有隔离机制，系统随时就有可能会挂掉，从而带来很大的风险。SpringCloud 使用Hystrix 组件提供断路器、资源隔离与自我修复功能。下图表示服务B触发了断路器，阻止了级联失败</p>
+<p><img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/a2b3bd60-a793-4e07-b65b-147ea6f09639/128/index_files/59809c07-0923-4546-aa83-ed920f53a3a5.jpg" alt=""></p>
+<p>设计目标</p>
+<ul>
+<li>对来自依赖的延迟和故障进行防护和控制——这些依赖通常都是通过网络访问的</li>
+<li>阻止故障的连锁反应</li>
+<li>快速失败并迅速恢复</li>
+<li>回退并优雅降级</li>
+<li>提供近实时的监控与告警</li>
+</ul>
+<p>设计准则</p>
+<ul>
+<li>防止任何单独的依赖耗尽资源（线程）</li>
+<li>过载立即切断并快速失败，防止排队</li>
+<li>尽可能提供回退以保护用户免受故障</li>
+<li>使用隔离技术（例如隔板，泳道和断路器模式）来限制任何一个依赖的影响</li>
+<li>通过近实时的指标，监控和告警，确保故障被及时发现</li>
+<li>通过动态修改配置属性，确保故障及时恢复</li>
+<li>防止整个依赖客户端执行失败，而不仅仅是网络通信</li>
+</ul>
+<p>如何实现</p>
+<ul>
+<li>使用命令模式将所有对外部服务（或依赖关系）的调用包装在HystrixCommand 或HystrixObservableCommand对象中，并将该对象放在单独的线程中执行；</li>
+<li>每个依赖都维护着一个线程池（或信号量），线程池被耗尽则拒绝请求（而不是让请求排队）。</li>
+<li>记录请求成功，失败，超时和线程拒绝。</li>
+<li>服务错误百分比超过了阈值，熔断器开关自动打开，一段时间内停止对该服务的所有请求。</li>
+<li>请求失败，被拒绝，超时或熔断时执行降级逻辑。</li>
+<li>近实时地监控指标和配置的修改。</li>
+</ul>
+<p>容错机制</p>
+<ul>
+<li>资源隔离</li>
+<li>熔断</li>
+<li>降级</li>
+</ul>
+<h4 id="22-spring-cloud-接口配合"><a href="#22-spring-cloud-接口配合" class="headerlink" title="22.spring cloud 接口配合"></a>22.spring cloud 接口配合</h4><p>Spring Cloud 在接口调用上，大致会经过如下几个组件配合：</p>
+<p><img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/a2b3bd60-a793-4e07-b65b-147ea6f09639/128/index_files/d5be6f27-caff-45b6-8f27-837ea6b11134.jpg" alt="接口"></p>
+<ol>
+<li>接口化请求调用当调用被<code>@FeignClient</code>注解修饰的接口时，在框架内部，将请求转换成<code>Feign</code>的请求实例<code>feign.Request</code>，交由<code>Feign</code>框架处理。</li>
+<li>Feign：转化请求<code>Feign</code>是一个http请求调用的轻量级框架，可以以Java接口注解的方式调用Http请求，封装了Http调用流程。</li>
+<li>Hystrix：熔断处理机制 <code>Feign</code>的调用关系，会被<code>Hystrix</code>代理拦截，对每一个<code>Feign</code>调用请求，<code>Hystrix</code>都会将其包装成<code>HystrixCommand</code>,参与<code>Hystrix</code>的流控和熔断规则。如果请求判断需要熔断，则<code>Hystrix</code>直接熔断，抛出异常或者使用<code>FallbackFactory</code>返回熔断<code>Fallback</code>结果；如果通过，则将调用请求传递给<code>Ribbon</code>组件。</li>
+<li>Ribbon：服务地址选择 当请求传递到<code>Ribbon</code>之后,<code>Ribbon</code>会根据自身维护的服务列表，根据服务的服务质量，如平均响应时间，Load等，结合特定的规则，从列表中挑选合适的服务实例，选择好机器之后，然后将机器实例的信息请求传递给<code>Http Client</code>客户端，<code>HttpClient</code>客户端来执行真正的Http接口调用；</li>
+<li>HttpClient：Http客户端，真正执行Http调用根据上层<code>Ribbon</code>传递过来的请求，已经指定了服务地址，则<code>HttpClient</code>开始执行真正的Http请求</li>
+</ol>
+<h4 id="23-Nuxt"><a href="#23-Nuxt" class="headerlink" title="23.Nuxt"></a>23.Nuxt</h4><h3 id="后台管理系统模块化"><a href="#后台管理系统模块化" class="headerlink" title="后台管理系统模块化"></a>后台管理系统模块化</h3><h4 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h4><h4 id="2-service-edu"><a href="#2-service-edu" class="headerlink" title="2.service-edu"></a>2.service-edu</h4><ul>
+<li>讲师的查询、删除、分页查询功能</li>
+<li>课程的增删改查、分页查询、发布功能</li>
+<li>课程类别、课程、章节、小节的增删改查功能<ul>
+<li>一个subject有多个course，一个course中有多个chapter，一个chapter中有多个子chapter（即课程的视频），建表的时候需要考虑一对多、一对一的问题</li>
+<li>四者之间具有一定的调用关系，因此增删改查中需要进行判断和整合。比如，删除一个分类后，当一个课程不属于任何一个分类时，就应该也进行删除。</li>
+</ul>
+</li>
+<li>使用spring cloud在删除课程的同时删除视频、删除小节的同时删除视频。</li>
+</ul>
+<h4 id="3-service-oss"><a href="#3-service-oss" class="headerlink" title="3.service-oss"></a>3.service-oss</h4><p>本模块实现上传图片到阿里云的功能。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建OSSClient实例。</span></span><br><span class="line">OSS ossClient = <span class="keyword">new</span> OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 获取上传文件流。</span></span><br><span class="line">    InputStream inputStream = file.getInputStream();</span><br><span class="line">    <span class="comment">// 获取文件名称</span></span><br><span class="line">    String fileName = file.getOriginalFilename();</span><br><span class="line">    <span class="comment">// 改造文件名称，防止重名覆盖问题</span></span><br><span class="line">    String uuid = UUID.randomUUID().toString();</span><br><span class="line">    fileName = uuid + fileName;</span><br><span class="line">    <span class="comment">// 将文件按照日期进行分类</span></span><br><span class="line">    String dateTime = <span class="keyword">new</span> DateTime().toString(<span class="string">"yyyy/MM/dd"</span>);</span><br><span class="line">    fileName = dateTime + <span class="string">"/"</span> + fileName;</span><br><span class="line">    <span class="comment">// 调用OSS方法实现上传</span></span><br><span class="line">    <span class="comment">// 第二个参数：上传到OSS文件路径和文件名称</span></span><br><span class="line">    ossClient.putObject(bucketName, fileName, inputStream);</span><br><span class="line">    <span class="comment">// 关闭OSSClient。</span></span><br><span class="line">    ossClient.shutdown();</span><br><span class="line"></span><br><span class="line">    url = <span class="string">"https://"</span> + bucketName + <span class="string">"."</span> + endpoint + <span class="string">"/"</span> + fileName;</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="4-service-vod"><a href="#4-service-vod" class="headerlink" title="4.service-vod"></a>4.service-vod</h4><p>本模块实现视频点播的功能</p>
+<h2 id="三-前台用户系统"><a href="#三-前台用户系统" class="headerlink" title="三.前台用户系统"></a>三.前台用户系统</h2><h2 id="四-一些问题的出现与解决"><a href="#四-一些问题的出现与解决" class="headerlink" title="四.一些问题的出现与解决"></a>四.一些问题的出现与解决</h2><h3 id="跨域问题"><a href="#跨域问题" class="headerlink" title="跨域问题"></a>跨域问题</h3><p>浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都属于跨域。</p>
 <p>解决方法：</p>
 <ul>
 <li><p>在controller上加上注解</p>
@@ -487,6 +619,60 @@
 <li><p>配置网关解决</p>
 </li>
 </ul>
+<h3 id="数据库加载问题"><a href="#数据库加载问题" class="headerlink" title="数据库加载问题"></a>数据库加载问题</h3><p>一些微服务模块，比如service-oss 中，不需要加载数据库，但是springboot 默认寻找数据库的配置，就很出错。</p>
+<p>解决方法：</p>
+<ul>
+<li>添加数据库配置</li>
+<li>在启动类添加属性，默认不去加载数据库配置</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span>(exclude = DataSourceAutoConfiguration<span class="class">.<span class="keyword">class</span>)</span></span><br><span class="line"><span class="class">@<span class="title">ComponentScan</span>(<span class="title">basePackages</span> </span>= &#123;<span class="string">"com.college"</span>&#125;)</span><br><span class="line"><span class="meta">@EnableDiscoveryClient</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OssApplication</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(OssApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="关于后端xml文件不会自动发布到target文件夹的问题"><a href="#关于后端xml文件不会自动发布到target文件夹的问题" class="headerlink" title="关于后端xml文件不会自动发布到target文件夹的问题"></a>关于后端xml文件不会自动发布到target文件夹的问题</h3><p>DAO层编译后，只有对应的class文件，没有对应的xml。因为maven工程在默认情况下src/main/java 目录下的所有资源文件是不发布到target目录下的。</p>
+<p>解决方法：</p>
+<ol>
+<li>在包的pom.xml里进行配置，</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 项目打包时会将java目录中的*.xml文件也进行打包 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/java<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.xml<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>false<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>在配置文件中进行相应的配置</li>
+</ol>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">mybatis-plus.mapper-locations</span>=<span class="string">classpath:com/college/serviceedu/mapper/xml/*.xml</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="关于spring，spring-boot，-spring-cloud的关系"><a href="#关于spring，spring-boot，-spring-cloud的关系" class="headerlink" title="关于spring，spring boot， spring cloud的关系"></a>关于spring，spring boot， spring cloud的关系</h3><p>Spring Boot 是 Spring 的一套快速配置脚手架，可以基于Spring Boot 快速开发单个微服务，Spring Cloud是一个基于Spring Boot实现的开发工具；Spring Boot专注于快速、方便集成的单个微服务个体，Spring Cloud关注全局的服务治理框架； Spring Boot使用了默认大于配置的理念，很多集成方案已经帮你选择好了，能不配置就不配置，Spring Cloud很大的一部分是基于Spring Boot来实现，必须基于Spring Boot开发。可以单独使用Spring Boot开发项目，但是Spring Cloud离不开 Spring Boot。</p>
+<h3 id="Feign-的GET的多参数传递"><a href="#Feign-的GET的多参数传递" class="headerlink" title="Feign 的GET的多参数传递"></a>Feign 的GET的多参数传递</h3><p>feign不支持GET请求直接传递POJO对象。（我没有遇到，但是查资料的时候看到了）</p>
+<p>解决方法如下：</p>
+<ul>
+<li><p>把POJO拆散成一个一个单独的属性放在方法参数中</p>
+</li>
+<li><p>把方法参数编程Map传递</p>
+</li>
+<li><p>使用GET传递@RequestBody，但此方式违反restful风格</p>
+</li>
+</ul>
+<p>最佳实践，采用拦截器的方式</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Slf</span>4j</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FeignCustomRequestInteceptor</span> <span class="keyword">implements</span> <span class="title">RequestInterceptor</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ObjectMapper objectMapper;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">apply</span><span class="params">(RequestTemplate template)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (HttpMethod.GET.toString() == template.method() &amp;&amp; template.body() != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="comment">//feign 不支持GET方法传输POJO 转换成json，再换成query</span></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                Map&lt;String, Collection&lt;String&gt;&gt; map = objectMapper.readValue(template.bodyTemplate(), <span class="keyword">new</span> TypeReference&lt;Map&lt;String, Collection&lt;String&gt;&gt;&gt;() &#123;</span><br><span class="line"></span><br><span class="line">                &#125;);</span><br><span class="line">                template.body(<span class="keyword">null</span>);</span><br><span class="line">                template.queries(map);</span><br><span class="line">            &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                log.error(<span class="string">"cause exception"</span>, e);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       
     </div>
@@ -677,7 +863,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#在线网课系统技术文档"><span class="nav-number">1.</span> <span class="nav-text">在线网课系统技术文档</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-系统设计与功能综述"><span class="nav-number">1.1.</span> <span class="nav-text">一.系统设计与功能综述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#业务模块"><span class="nav-number">1.1.1.</span> <span class="nav-text">业务模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术栈"><span class="nav-number">1.1.2.</span> <span class="nav-text">技术栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#综述"><span class="nav-number">1.1.3.</span> <span class="nav-text">综述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-后台管理系统"><span class="nav-number">1.2.</span> <span class="nav-text">二.后台管理系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#框架与工具"><span class="nav-number">1.2.1.</span> <span class="nav-text">框架与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-MyBatis-Plus"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">1.MyBatis-Plus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-MySQL"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">2.MySQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-SpringBoot"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">3.SpringBoot</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Swagger2"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">4.Swagger2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-统一返回数据格式（自定义）"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">5.统一返回数据格式（自定义）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-log4j"><span class="nav-number">1.2.1.6.</span> <span class="nav-text">6.log4j</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-ES6，ES5"><span class="nav-number">1.2.1.7.</span> <span class="nav-text">7.ES6，ES5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-Vue"><span class="nav-number">1.2.1.8.</span> <span class="nav-text">8.Vue</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-axios"><span class="nav-number">1.2.1.9.</span> <span class="nav-text">9.axios</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-element-ui"><span class="nav-number">1.2.1.10.</span> <span class="nav-text">10.element-ui</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-Node-js"><span class="nav-number">1.2.1.11.</span> <span class="nav-text">11.Node.js</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台管理系统模块化"><span class="nav-number">1.2.2.</span> <span class="nav-text">后台管理系统模块化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-环境搭建"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">1.环境搭建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-service-edu"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">2.service-edu</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-前台服务系统"><span class="nav-number">1.3.</span> <span class="nav-text">三.前台服务系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-一些问题的出现与解决"><span class="nav-number">1.4.</span> <span class="nav-text">四.一些问题的出现与解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#跨域问题"><span class="nav-number">1.4.1.</span> <span class="nav-text">跨域问题</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#在线网课系统技术文档"><span class="nav-number">1.</span> <span class="nav-text">在线网课系统技术文档</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-系统设计与功能综述"><span class="nav-number">1.1.</span> <span class="nav-text">一.系统设计与功能综述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#业务模块"><span class="nav-number">1.1.1.</span> <span class="nav-text">业务模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术栈"><span class="nav-number">1.1.2.</span> <span class="nav-text">技术栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#综述"><span class="nav-number">1.1.3.</span> <span class="nav-text">综述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-后台管理系统"><span class="nav-number">1.2.</span> <span class="nav-text">二.后台管理系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#框架与工具"><span class="nav-number">1.2.1.</span> <span class="nav-text">框架与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-MyBatis-Plus"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">1.MyBatis-Plus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-MySQL"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">2.MySQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-SpringBoot"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">3.SpringBoot</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Swagger2"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">4.Swagger2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-统一返回数据格式（自定义）"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">5.统一返回数据格式（自定义）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-logback"><span class="nav-number">1.2.1.6.</span> <span class="nav-text">6.logback</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-ES6，ES5"><span class="nav-number">1.2.1.7.</span> <span class="nav-text">7.ES6，ES5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-Vue"><span class="nav-number">1.2.1.8.</span> <span class="nav-text">8.Vue</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-axios"><span class="nav-number">1.2.1.9.</span> <span class="nav-text">9.axios</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-element-ui"><span class="nav-number">1.2.1.10.</span> <span class="nav-text">10.element-ui</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-Node-js"><span class="nav-number">1.2.1.11.</span> <span class="nav-text">11.Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-vue-element-admin"><span class="nav-number">1.2.1.12.</span> <span class="nav-text">12.vue-element-admin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-nginx"><span class="nav-number">1.2.1.13.</span> <span class="nav-text">13.nginx</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-阿里云OSS"><span class="nav-number">1.2.1.14.</span> <span class="nav-text">14.阿里云OSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15-EasyExcel"><span class="nav-number">1.2.1.15.</span> <span class="nav-text">15.EasyExcel</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16-Tinymce可视化编辑器"><span class="nav-number">1.2.1.16.</span> <span class="nav-text">16.Tinymce可视化编辑器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#17-阿里云视频点播功能"><span class="nav-number">1.2.1.17.</span> <span class="nav-text">17.阿里云视频点播功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18-微服务"><span class="nav-number">1.2.1.18.</span> <span class="nav-text">18.微服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#19-Nacos"><span class="nav-number">1.2.1.19.</span> <span class="nav-text">19.Nacos</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#20-Feign"><span class="nav-number">1.2.1.20.</span> <span class="nav-text">20.Feign</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#21-Hystrix"><span class="nav-number">1.2.1.21.</span> <span class="nav-text">21.Hystrix</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22-spring-cloud-接口配合"><span class="nav-number">1.2.1.22.</span> <span class="nav-text">22.spring cloud 接口配合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#23-Nuxt"><span class="nav-number">1.2.1.23.</span> <span class="nav-text">23.Nuxt</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台管理系统模块化"><span class="nav-number">1.2.2.</span> <span class="nav-text">后台管理系统模块化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-环境搭建"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">1.环境搭建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-service-edu"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">2.service-edu</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-service-oss"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">3.service-oss</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-service-vod"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">4.service-vod</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-前台用户系统"><span class="nav-number">1.3.</span> <span class="nav-text">三.前台用户系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-一些问题的出现与解决"><span class="nav-number">1.4.</span> <span class="nav-text">四.一些问题的出现与解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#跨域问题"><span class="nav-number">1.4.1.</span> <span class="nav-text">跨域问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库加载问题"><span class="nav-number">1.4.2.</span> <span class="nav-text">数据库加载问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于后端xml文件不会自动发布到target文件夹的问题"><span class="nav-number">1.4.3.</span> <span class="nav-text">关于后端xml文件不会自动发布到target文件夹的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于spring，spring-boot，-spring-cloud的关系"><span class="nav-number">1.4.4.</span> <span class="nav-text">关于spring，spring boot， spring cloud的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feign-的GET的多参数传递"><span class="nav-number">1.4.5.</span> <span class="nav-text">Feign 的GET的多参数传递</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
