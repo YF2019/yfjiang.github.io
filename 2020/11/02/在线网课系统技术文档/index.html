@@ -123,25 +123,28 @@
 
 
 
-<meta name="description" content="在线网课系统技术文档一.系统设计与功能综述业务模块 技术栈 综述后续补充 二.后台管理系统框架与工具1.MyBatis-Plus本项目主要使用的MyBatis-Plus功能：  内置的Mapper, Service进行基本的CRUD操作 主键的生成策略，默认全局唯一ID 代码生成器 内置的分页插件 自动填充字段，比如创建时间和更新时间等，需要继承MetaObjectHandler接口 SQL性能分">
+<meta name="description" content="在线网课系统技术文档一.系统设计与功能综述业务模块 技术栈 综述对一些技术进行入门级的使用和理解罢了 二.后台管理系统框架与工具1.MyBatis-Plus本项目主要使用的MyBatis-Plus功能：  内置的Mapper, Service进行基本的CRUD操作 主键的生成策略，默认全局唯一ID 代码生成器 内置的分页插件 自动填充字段，比如创建时间和更新时间等，需要继承MetaObjectHa">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在线网课系统技术文档">
 <meta property="og:url" content="http://yoursite.com/2020/11/02/%E5%9C%A8%E7%BA%BF%E7%BD%91%E8%AF%BE%E7%B3%BB%E7%BB%9F%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/index.html">
 <meta property="og:site_name" content="YF&#39;s Blog">
-<meta property="og:description" content="在线网课系统技术文档一.系统设计与功能综述业务模块 技术栈 综述后续补充 二.后台管理系统框架与工具1.MyBatis-Plus本项目主要使用的MyBatis-Plus功能：  内置的Mapper, Service进行基本的CRUD操作 主键的生成策略，默认全局唯一ID 代码生成器 内置的分页插件 自动填充字段，比如创建时间和更新时间等，需要继承MetaObjectHandler接口 SQL性能分">
-<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/c85d9d86-c9f3-44b8-a714-590c826cfd64/128/index_files/1bb0cd7a29b6b1bcf3c569e2441efcec.png">
-<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/c85d9d86-c9f3-44b8-a714-590c826cfd64/128/index_files/7509966.png">
-<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/46b1441b-7480-4673-992b-f69c209798d5/128/index_files/0.9177152660737906.png">
-<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/148a52f0-2c98-4e1b-b85b-5bcd68d35c7b/128/index_files/0.8804617085856941.png">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7632302-0b09dd85b8baa318.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/790/format/webp">
-<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/a2b3bd60-a793-4e07-b65b-147ea6f09639/128/index_files/59809c07-0923-4546-aa83-ed920f53a3a5.jpg">
-<meta property="og:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/a2b3bd60-a793-4e07-b65b-147ea6f09639/128/index_files/d5be6f27-caff-45b6-8f27-837ea6b11134.jpg">
+<meta property="og:description" content="在线网课系统技术文档一.系统设计与功能综述业务模块 技术栈 综述对一些技术进行入门级的使用和理解罢了 二.后台管理系统框架与工具1.MyBatis-Plus本项目主要使用的MyBatis-Plus功能：  内置的Mapper, Service进行基本的CRUD操作 主键的生成策略，默认全局唯一ID 代码生成器 内置的分页插件 自动填充字段，比如创建时间和更新时间等，需要继承MetaObjectHa">
+<meta property="og:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C1bb0cd7a29b6b1bcf3c569e2441efcec.png">
+<meta property="og:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C7509966.png">
+<meta property="og:image" content="d:/postgraduate/colloge/技术文档/0.9177152660737906.png">
+<meta property="og:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C0.8804617085856941.png">
+<meta property="og:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5Cwebp">
+<meta property="og:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C59809c07-0923-4546-aa83-ed920f53a3a5.jpg">
+<meta property="og:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5Cd5be6f27-caff-45b6-8f27-837ea6b11134.jpg">
+<meta property="og:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5Cclip_image0041ce28b5a-5e6d-4943-a794-3f3a93e82737.gif">
+<meta property="og:image" content="d:/postgraduate/colloge/技术文档/clip_image006e8ff2d55-f7e1-48c3-a783-72c480a05499.gif">
+<meta property="og:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C10fde967-d265-42b9-b023-a735963b0205.jpg">
 <meta property="article:published_time" content="2020-11-02T13:41:19.000Z">
 <meta property="article:modified_time" content="2020-11-02T13:41:19.000Z">
 <meta property="article:author" content="Yefan Jiang">
 <meta property="article:tag" content="在线网课系统">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="file:///C:/Users/winte/Documents/My%20Knowledge/temp/c85d9d86-c9f3-44b8-a714-590c826cfd64/128/index_files/1bb0cd7a29b6b1bcf3c569e2441efcec.png">
+<meta name="twitter:image" content="d:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C1bb0cd7a29b6b1bcf3c569e2441efcec.png">
 
 
 
@@ -435,9 +438,9 @@
       
 
       
-        <h1 id="在线网课系统技术文档"><a href="#在线网课系统技术文档" class="headerlink" title="在线网课系统技术文档"></a>在线网课系统技术文档</h1><h2 id="一-系统设计与功能综述"><a href="#一-系统设计与功能综述" class="headerlink" title="一.系统设计与功能综述"></a>一.系统设计与功能综述</h2><h3 id="业务模块"><a href="#业务模块" class="headerlink" title="业务模块"></a>业务模块</h3><p><img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/c85d9d86-c9f3-44b8-a714-590c826cfd64/128/index_files/1bb0cd7a29b6b1bcf3c569e2441efcec.png" alt="在线教育系统业务模块"></p>
-<h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><p><img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/c85d9d86-c9f3-44b8-a714-590c826cfd64/128/index_files/7509966.png" alt=""></p>
-<h3 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h3><p>后续补充</p>
+        <h1 id="在线网课系统技术文档"><a href="#在线网课系统技术文档" class="headerlink" title="在线网课系统技术文档"></a>在线网课系统技术文档</h1><h2 id="一-系统设计与功能综述"><a href="#一-系统设计与功能综述" class="headerlink" title="一.系统设计与功能综述"></a>一.系统设计与功能综述</h2><h3 id="业务模块"><a href="#业务模块" class="headerlink" title="业务模块"></a>业务模块</h3><p><img src="D:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C1bb0cd7a29b6b1bcf3c569e2441efcec.png" alt="在线教育系统业务模块"></p>
+<h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><p><img src="D:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C7509966.png" alt=""></p>
+<h3 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h3><p>对一些技术进行入门级的使用和理解罢了</p>
 <h2 id="二-后台管理系统"><a href="#二-后台管理系统" class="headerlink" title="二.后台管理系统"></a>二.后台管理系统</h2><h3 id="框架与工具"><a href="#框架与工具" class="headerlink" title="框架与工具"></a>框架与工具</h3><h4 id="1-MyBatis-Plus"><a href="#1-MyBatis-Plus" class="headerlink" title="1.MyBatis-Plus"></a>1.MyBatis-Plus</h4><p>本项目主要使用的<a href="https://baomidou.com/" target="_blank" rel="noopener">MyBatis-Plus</a>功能：</p>
 <ul>
 <li>内置的Mapper, Service进行基本的CRUD操作</li>
@@ -449,7 +452,6 @@
 <li>条件构造器wrapper进行复杂的CRUD</li>
 <li>乐观锁插件</li>
 <li>逻辑删除插件</li>
-<li>。。。</li>
 </ul>
 <h4 id="2-MySQL"><a href="#2-MySQL" class="headerlink" title="2.MySQL"></a>2.MySQL</h4><ul>
 <li>设计参考《阿里巴巴Java开发手册》</li>
@@ -474,7 +476,7 @@
 <li><p>基本的语法</p>
 </li>
 <li><p>组件，可以扩展 HTML 元素，封装可重用的代码</p>
-<img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/46b1441b-7480-4673-992b-f69c209798d5/128/index_files/0.9177152660737906.png" alt="组件的生命周期" style="zoom: 33%;" />
+<img src="D:\postgraduate\colloge\技术文档\0.9177152660737906.png" alt="组件的生命周期" style="zoom: 33%;" />
 </li>
 <li><p>路由。路由允许我们通过不同的 URL 访问不同的内容，通过 Vue.js 可以实现多视图的单页Web应用（single page web application，SPA）</p>
 </li>
@@ -513,7 +515,7 @@
 <h4 id="14-阿里云OSS"><a href="#14-阿里云OSS" class="headerlink" title="14.阿里云OSS"></a>14.阿里云OSS</h4><p>云存储微服务</p>
 <h4 id="15-EasyExcel"><a href="#15-EasyExcel" class="headerlink" title="15.EasyExcel"></a>15.EasyExcel</h4><p>EasyExcel 是阿里巴巴开源的一个excel处理框架，以使用简单、节省内存著称。EasyExcel 能大大减少占用内存的主要原因是在解析Excel时没有将文件数据一次性全部加载到内存中，而是从磁盘上一行行读取数据，逐个解析。</p>
 <h4 id="16-Tinymce可视化编辑器"><a href="#16-Tinymce可视化编辑器" class="headerlink" title="16.Tinymce可视化编辑器"></a>16.Tinymce可视化编辑器</h4><p>富文本编辑器</p>
-<h4 id="17-阿里云视频点播功能"><a href="#17-阿里云视频点播功能" class="headerlink" title="17.阿里云视频点播功能"></a>17.阿里云视频点播功能</h4><p><img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/148a52f0-2c98-4e1b-b85b-5bcd68d35c7b/128/index_files/0.8804617085856941.png" alt="视频点播"></p>
+<h4 id="17-阿里云视频点播功能"><a href="#17-阿里云视频点播功能" class="headerlink" title="17.阿里云视频点播功能"></a>17.阿里云视频点播功能</h4><p><img src="D:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C0.8804617085856941.png" alt="视频点播"></p>
 <h4 id="18-微服务"><a href="#18-微服务" class="headerlink" title="18.微服务"></a>18.微服务</h4><p>微服务架构风格是一种使用一套小服务来开发单个应用的方式途径，每个服务运行在自己的进程中，并使用轻量级机制通信，通常是HTTP API，这些服务基于业务能力构建，并能够通过自动化部署机制来独立部署，这些服务使用不同的编程语言实现，以及不同数据存储技术，并保持最低限度的集中式管理。 </p>
 <p>本质：</p>
 <ul>
@@ -545,13 +547,20 @@
 </ul>
 <h4 id="19-Nacos"><a href="#19-Nacos" class="headerlink" title="19.Nacos"></a>19.Nacos</h4><p><a href="https://nacos.io/zh-cn/docs/quick-start.html" target="_blank" rel="noopener">Nacos</a>  是阿里巴巴推出来的一个新开源项目，是一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。</p>
 <p>消费者、生产者均在nacos注册中心进行注册，消费者在需要的时候，可以在注册中心得到生产者的地址，从而调用生产者提供的方法。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/7632302-0b09dd85b8baa318.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/790/format/webp" alt=""></p>
+<p><img src="D:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5Cwebp" alt=""></p>
+<p>nacos配置中心</p>
+<ul>
+<li><p>系统配置的集中管理（编辑、存储、分发）、动态更新不重启、回滚配置（变更管理、历史版本管理、变更审计）等所有与配置相关的活动。</p>
+</li>
+<li><p>本项目service-statistics模块在nacos中创建统一的配置文件</p>
+</li>
+</ul>
 <h4 id="20-Feign"><a href="#20-Feign" class="headerlink" title="20.Feign"></a>20.Feign</h4><p>Feign是Netflix开发的声明式、模板化的HTTP客户端。可以更加快捷方便的调用Http API</p>
 <p>feign是声明式的web service客户端，它让微服务之间的调用变得更简单了，类似controller调用service。Spring Cloud集成了Ribbon和Eureka，可在使用Feign时提供负载均衡的http客户端。</p>
 <p>本项目中使用Feign调用微服务进行微服务交互操作</p>
 <h4 id="21-Hystrix"><a href="#21-Hystrix" class="headerlink" title="21.Hystrix"></a>21.Hystrix</h4><p>Hystrix 是一个供分布式系统使用，提供延迟和容错功能，保证复杂的分布系统在面临不可避免的失败时，仍能有其弹性。</p>
 <p>比如系统中有很多服务，当某些服务不稳定的时候，使用这些服务的用户线程将会阻塞，如果没有隔离机制，系统随时就有可能会挂掉，从而带来很大的风险。SpringCloud 使用Hystrix 组件提供断路器、资源隔离与自我修复功能。下图表示服务B触发了断路器，阻止了级联失败</p>
-<p><img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/a2b3bd60-a793-4e07-b65b-147ea6f09639/128/index_files/59809c07-0923-4546-aa83-ed920f53a3a5.jpg" alt=""></p>
+<p><img src="D:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C59809c07-0923-4546-aa83-ed920f53a3a5.jpg" alt=""></p>
 <p>设计目标</p>
 <ul>
 <li>对来自依赖的延迟和故障进行防护和控制——这些依赖通常都是通过网络访问的</li>
@@ -586,7 +595,7 @@
 <li>降级</li>
 </ul>
 <h4 id="22-spring-cloud-接口配合"><a href="#22-spring-cloud-接口配合" class="headerlink" title="22.spring cloud 接口配合"></a>22.spring cloud 接口配合</h4><p>Spring Cloud 在接口调用上，大致会经过如下几个组件配合：</p>
-<p><img src="file:///C:/Users/winte/Documents/My%20Knowledge/temp/a2b3bd60-a793-4e07-b65b-147ea6f09639/128/index_files/d5be6f27-caff-45b6-8f27-837ea6b11134.jpg" alt="接口"></p>
+<p><img src="D:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5Cd5be6f27-caff-45b6-8f27-837ea6b11134.jpg" alt="接口"></p>
 <ol>
 <li>接口化请求调用当调用被<code>@FeignClient</code>注解修饰的接口时，在框架内部，将请求转换成<code>Feign</code>的请求实例<code>feign.Request</code>，交由<code>Feign</code>框架处理。</li>
 <li>Feign：转化请求<code>Feign</code>是一个http请求调用的轻量级框架，可以以Java接口注解的方式调用Http请求，封装了Http调用流程。</li>
@@ -594,7 +603,102 @@
 <li>Ribbon：服务地址选择 当请求传递到<code>Ribbon</code>之后,<code>Ribbon</code>会根据自身维护的服务列表，根据服务的服务质量，如平均响应时间，Load等，结合特定的规则，从列表中挑选合适的服务实例，选择好机器之后，然后将机器实例的信息请求传递给<code>Http Client</code>客户端，<code>HttpClient</code>客户端来执行真正的Http接口调用；</li>
 <li>HttpClient：Http客户端，真正执行Http调用根据上层<code>Ribbon</code>传递过来的请求，已经指定了服务地址，则<code>HttpClient</code>开始执行真正的Http请求</li>
 </ol>
-<h4 id="23-Nuxt"><a href="#23-Nuxt" class="headerlink" title="23.Nuxt"></a>23.Nuxt</h4><h3 id="后台管理系统模块化"><a href="#后台管理系统模块化" class="headerlink" title="后台管理系统模块化"></a>后台管理系统模块化</h3><h4 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h4><h4 id="2-service-edu"><a href="#2-service-edu" class="headerlink" title="2.service-edu"></a>2.service-edu</h4><ul>
+<h4 id="23-Nuxt"><a href="#23-Nuxt" class="headerlink" title="23.Nuxt"></a>23.Nuxt</h4><p>服务端渲染（SSR）在服务器端渲染HTML页面，区别于客户端渲染（CSR），后者在客户端渲染。服务端渲染可以有更好的搜索引擎优化（SEO）。</p>
+<p>Nuxt.js 是一个基于 Vue.js 的轻量级应用框架,可用来创建服务端渲染 (SSR) 应用,也可充当静态站点引擎生成静态站点应用,具有优雅的代码结构分层和热加载等特性。</p>
+<p>本项目使用nust构建前台用户系统。</p>
+<h4 id="24-redis"><a href="#24-redis" class="headerlink" title="24.redis"></a>24.redis</h4><p>基于key-value存储系统的NoSQL系统</p>
+<ul>
+<li>Redis 读取的速度是110000次/s，写的速度是81000次/s；</li>
+<li>原子 。Redis 的所有操作都是原子性的，同时Redis 还支持对几个操作全并后的原子性执行。</li>
+<li>支持多种数据结构：string（字符串）；list（列表）；hash（哈希），set（集合）；zset (有序集合)</li>
+<li>持久化，集群部署</li>
+<li>支持过期时间，支持事务，消息订阅</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 几个spring boot注解</span></span><br><span class="line"><span class="meta">@Cacheable</span> <span class="comment">// 一般用于查询方法</span></span><br><span class="line"><span class="meta">@CachePut</span> <span class="comment">// 一般用在新增方法上</span></span><br><span class="line"><span class="meta">@CacheEvict</span> <span class="comment">// 一般用在更新或者删除方法上</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="25-SSO"><a href="#25-SSO" class="headerlink" title="25.SSO"></a>25.SSO</h4><p>SSO：</p>
+<p><img src="D:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5Cclip_image0041ce28b5a-5e6d-4943-a794-3f3a93e82737.gif" alt=""></p>
+<p>单点登录三种常见的方式</p>
+<ul>
+<li>session广播机制实现</li>
+<li>使用cookie + redis 实现<ul>
+<li>在任意一个模块登录后，将数据放到两个地方：redis 存放唯一key 值代表用户id，value存放用户数据；</li>
+<li>将redis 中生成的key 值放到cookie里</li>
+<li>每次访问其他模块时，发送的请求带着cookie进行发送，根据读到的key 在redis查询数据</li>
+</ul>
+</li>
+<li>使用token实现<ul>
+<li>在任意一个模块登录后，按照规则生成字符串，把登录的用户信息存放在字符串中返回。</li>
+<li>每次访问其他模块时，解析地址栏中的字符串，获取用户信息。</li>
+</ul>
+</li>
+</ul>
+<img src="D:\postgraduate\colloge\技术文档\clip_image006e8ff2d55-f7e1-48c3-a783-72c480a05499.gif" style="zoom: 80%;" />
+
+
+
+<h4 id="26-JWT令牌"><a href="#26-JWT令牌" class="headerlink" title="26.JWT令牌"></a>26.JWT令牌</h4><p>传统的登陆：</p>
+<ol>
+<li>用户向服务器发送用户名和密码。</li>
+<li>验证服务器后，相关数据（如用户角色，登录时间等）将保存在当前会话中。</li>
+<li>服务器向用户返回session_id，session信息都会写入到用户的Cookie。</li>
+<li>用户的每个后续请求都将通过在Cookie中取出session_id传给服务器。</li>
+<li>服务器收到session_id并对比之前保存的数据，确认用户的身份。</li>
+</ol>
+<p>JWT规则生成字符串，包含用户的信息</p>
+<ol>
+<li>JWT 头信息</li>
+<li>有效荷载，包含主体信息</li>
+<li>签名哈希，作为防伪标志</li>
+</ol>
+<h4 id="27-OAuth2"><a href="#27-OAuth2" class="headerlink" title="27.OAuth2"></a>27.OAuth2</h4><p>本项目用于微信登陆。（没有做，因为收费）</p>
+<p>主要解决的问题</p>
+<ul>
+<li>开放系统间的授权</li>
+<li>分布式访问问题</li>
+</ul>
+<h4 id="28-EChatrs"><a href="#28-EChatrs" class="headerlink" title="28.EChatrs"></a>28.EChatrs</h4><p>ECharts是百度的一个项目，后来百度把Echart捐给apache，用于图表展示，提供了常规的折线图、柱状图、散点图、饼图、K线图，用于统计的盒形图，用于地理数据可视化的地图、热力图、线图，用于关系数据可视化的关系图、treemap、旭日图，多维数据可视化的平行坐标，还有用于 BI 的漏斗图，仪表盘，并且支持图与图之间的混搭。</p>
+<h4 id="29-Canal"><a href="#29-Canal" class="headerlink" title="29.Canal"></a>29.Canal</h4><p>实时同步数据库（bug没调通）</p>
+<h4 id="30-Gateway"><a href="#30-Gateway" class="headerlink" title="30.Gateway"></a>30.Gateway</h4><p>前面使用nginx，存在跨域问题，本质上是因为，多数情况还是客户端与各个微服务进行通信：</p>
+<ul>
+<li>客户端会多次请求不同的微服务，增加了客户端的复杂性。</li>
+<li>存在跨域请求，在一定场景下处理相对复杂。</li>
+<li>认证复杂，每个服务都需要独立认证。</li>
+<li>难以重构，随着项目的迭代，可能需要重新划分微服务。例如，可能将多个服务合并成一个或者将一个服务拆分成多个。如果客户端直接与微服务通信，那么重构将会很难实施。</li>
+<li>某些微服务可能使用了防火墙 / 浏览器不友好的协议，直接访问会有一定的困难。</li>
+</ul>
+<p>Spring Cloud Gateway旨在为微服务架构提供简单、有效和统一的API路由管理方式</p>
+<p><img src="D:%5Cpostgraduate%5Ccolloge%5C%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%5C10fde967-d265-42b9-b023-a735963b0205.jpg" alt=""></p>
+<p>几个重要的概念：</p>
+<ol>
+<li>路由。路由是网关最基础的部分，路由信息有一个ID、一个目的URL、一组断言和一组Filter组成。如果断言路由为真，则说明请求的URL和配置匹配</li>
+<li>断言。Java8中的断言函数。Spring Cloud Gateway中的断言函数输入类型是Spring5.0框架中的ServerWebExchange。Spring Cloud Gateway中的断言函数允许开发者去定义匹配来自于http request中的任何信息，比如请求头和参数等。</li>
+<li>过滤器。一个标准的Spring webFilter。Spring cloud gateway中的filter分为两种类型的Filter，分别是Gateway Filter和Global Filter。过滤器Filter将会对请求和响应进行修改处理</li>
+</ol>
+<h4 id="31-Spring-Security"><a href="#31-Spring-Security" class="headerlink" title="31.Spring Security"></a>31.Spring Security</h4><p>Spring Security 基于 Spring 框架，提供了一套 Web 应用安全性的完整解决方案。一般来说，Web 应用的安全性包括用户认证（Authentication）和用户授权（Authorization）两个部分。</p>
+<ul>
+<li><p>用户认证指的是：验证某个用户是否为系统中的合法主体，也就是说用户能否访问该系统。用户认证一般要求用户提供用户名和密码。系统通过校验用户名和密码来完成认证过程。</p>
+</li>
+<li><p>用户授权指的是验证某个用户是否有权限执行某个操作。在一个系统中，不同用户所具有的权限是不同的。比如对一个文件来说，有的用户只能进行读取，而有的用户可以进行修改。一般来说，系统会为不同的用户分配不同的角色，而每个角色则对应一系列的权限。</p>
+</li>
+</ul>
+<p>Spring Security其实就是用filter，多请求的路径进行过滤。</p>
+<ul>
+<li><p>如果是基于Session，那么Spring-security会对cookie里的sessionid进行解析，找到服务器存储的sesion信息，然后判断当前用户是否符合请求的要求。</p>
+</li>
+<li><p>如果是token，则是解析出token，然后将当前请求加入到Spring-security管理的权限信息中去</p>
+</li>
+</ul>
+<p>如果系统的模块众多，每个模块都需要就行授权与认证，所以本项目选择基于token的形式进行授权与认证</p>
+<ol>
+<li>用户根据用户名密码认证成功，然后获取当前用户角色的一系列权限值，并以用户名为key，权限列表为value的形式存入redis缓存中，根据用户名相关信息生成token返回</li>
+<li>浏览器将token记录到cookie中，每次调用api接口都默认将token携带到header请求头中</li>
+<li>Spring-security解析header头获取token信息，解析token获取当前用户名，根据用户名就可以从redis中获取权限列表，这样Spring-security就能够判断当前请求是否有权限访问</li>
+</ol>
+<h4 id="32-Jenkins"><a href="#32-Jenkins" class="headerlink" title="32.Jenkins"></a>32.Jenkins</h4><p>自动部署项目</p>
+<h3 id="后台管理系统模块化"><a href="#后台管理系统模块化" class="headerlink" title="后台管理系统模块化"></a>后台管理系统模块化</h3><h4 id="1-环境搭建"><a href="#1-环境搭建" class="headerlink" title="1.环境搭建"></a>1.环境搭建</h4><h4 id="2-service-edu"><a href="#2-service-edu" class="headerlink" title="2.service-edu"></a>2.service-edu</h4><ul>
 <li>讲师的查询、删除、分页查询功能</li>
 <li>课程的增删改查、分页查询、发布功能</li>
 <li>课程类别、课程、章节、小节的增删改查功能<ul>
@@ -602,7 +706,9 @@
 <li>四者之间具有一定的调用关系，因此增删改查中需要进行判断和整合。比如，删除一个分类后，当一个课程不属于任何一个分类时，就应该也进行删除。</li>
 </ul>
 </li>
-<li>使用spring cloud在删除课程的同时删除视频、删除小节的同时删除视频。</li>
+<li>使用spring cloud在删除课程的同时删除视频、删除小节的同时删除视频</li>
+<li>前台讲师、课程的分页查询</li>
+<li>课程评论（有bug)</li>
 </ul>
 <h4 id="3-service-oss"><a href="#3-service-oss" class="headerlink" title="3.service-oss"></a>3.service-oss</h4><p>本模块实现上传图片到阿里云的功能。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建OSSClient实例。</span></span><br><span class="line">OSS ossClient = <span class="keyword">new</span> OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 获取上传文件流。</span></span><br><span class="line">    InputStream inputStream = file.getInputStream();</span><br><span class="line">    <span class="comment">// 获取文件名称</span></span><br><span class="line">    String fileName = file.getOriginalFilename();</span><br><span class="line">    <span class="comment">// 改造文件名称，防止重名覆盖问题</span></span><br><span class="line">    String uuid = UUID.randomUUID().toString();</span><br><span class="line">    fileName = uuid + fileName;</span><br><span class="line">    <span class="comment">// 将文件按照日期进行分类</span></span><br><span class="line">    String dateTime = <span class="keyword">new</span> DateTime().toString(<span class="string">"yyyy/MM/dd"</span>);</span><br><span class="line">    fileName = dateTime + <span class="string">"/"</span> + fileName;</span><br><span class="line">    <span class="comment">// 调用OSS方法实现上传</span></span><br><span class="line">    <span class="comment">// 第二个参数：上传到OSS文件路径和文件名称</span></span><br><span class="line">    ossClient.putObject(bucketName, fileName, inputStream);</span><br><span class="line">    <span class="comment">// 关闭OSSClient。</span></span><br><span class="line">    ossClient.shutdown();</span><br><span class="line"></span><br><span class="line">    url = <span class="string">"https://"</span> + bucketName + <span class="string">"."</span> + endpoint + <span class="string">"/"</span> + fileName;</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -610,7 +716,56 @@
 
 
 <h4 id="4-service-vod"><a href="#4-service-vod" class="headerlink" title="4.service-vod"></a>4.service-vod</h4><p>本模块实现视频点播的功能</p>
-<h2 id="三-前台用户系统"><a href="#三-前台用户系统" class="headerlink" title="三.前台用户系统"></a>三.前台用户系统</h2><h2 id="四-一些问题的出现与解决"><a href="#四-一些问题的出现与解决" class="headerlink" title="四.一些问题的出现与解决"></a>四.一些问题的出现与解决</h2><h3 id="跨域问题"><a href="#跨域问题" class="headerlink" title="跨域问题"></a>跨域问题</h3><p>浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都属于跨域。</p>
+<h4 id="5-service-cms"><a href="#5-service-cms" class="headerlink" title="5.service-cms"></a>5.service-cms</h4><p>本模块用于前台系统的幻灯片轮播</p>
+<ul>
+<li>后台分页查询、增、删、改。权限属于管理员</li>
+<li>前台查询。</li>
+<li>由于首页数据变化不频繁，但是访问量较大，因此采用redis缓存，减少数据库压力，提高访问速度。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Cacheable</span>(value = <span class="string">"banner"</span>, key = <span class="string">"'getBannerList'"</span>)</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;CrmBanner&gt; <span class="title">getBannerList</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    QueryWrapper&lt;CrmBanner&gt; wrapper = <span class="keyword">new</span> QueryWrapper&lt;&gt;();</span><br><span class="line">    wrapper.orderByDesc(<span class="string">"id"</span>);</span><br><span class="line">    <span class="comment">// last方法 拼接sql 只取两条数据</span></span><br><span class="line">    wrapper.last(<span class="string">"limit 2"</span>);</span><br><span class="line">    List&lt;CrmBanner&gt; crmBannerList = baseMapper.selectList(wrapper);</span><br><span class="line">    <span class="keyword">return</span> crmBannerList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="6-service-msm"><a href="#6-service-msm" class="headerlink" title="6.service-msm"></a>6.service-msm</h4><p>本模块配合阿里云短信服务进行验证码的发送</p>
+<h4 id="7-service-ucenter"><a href="#7-service-ucenter" class="headerlink" title="7.service-ucenter"></a>7.service-ucenter</h4><ul>
+<li>前台系统的注册、登陆。</li>
+<li>前台系统根据token得到用户信息。</li>
+</ul>
+<h4 id="8-service-order"><a href="#8-service-order" class="headerlink" title="8.service-order"></a>8.service-order</h4><ul>
+<li>创建订单，获取订单，生成微信支付二维码，根据id查询订单支付状态</li>
+<li>课程信息需要调用service-edu，用户信息需要调用service-ucenter</li>
+</ul>
+<h4 id="9-service-statistics"><a href="#9-service-statistics" class="headerlink" title="9.service-statistics"></a>9.service-statistics</h4><p>本模块结合Echarts 进行相关数据的统计。</p>
+<h4 id="10-service-acl"><a href="#10-service-acl" class="headerlink" title="10.service-acl"></a>10.service-acl</h4><p>本模块主要负责权限管理的分配。</p>
+<ul>
+<li>菜单管理</li>
+<li>角色管理</li>
+<li>用户管理</li>
+</ul>
+<p>五张表：菜单表、角色表、用户表、角色菜单关系表、用户角色关系表</p>
+<h4 id="11-api-gateway"><a href="#11-api-gateway" class="headerlink" title="11.api-gateway"></a>11.api-gateway</h4><p>本模块主要进行网关的配置。</p>
+<h4 id="12-spring-security"><a href="#12-spring-security" class="headerlink" title="12.spring_security"></a>12.spring_security</h4><p>采用现成的代码，实现用户的授权和认证。</p>
+<h4 id="13-common-utils"><a href="#13-common-utils" class="headerlink" title="13.common-utils"></a>13.common-utils</h4><p>本模块配置一些全局使用的工具类</p>
+<h2 id="三-前台用户系统"><a href="#三-前台用户系统" class="headerlink" title="三.前台用户系统"></a>三.前台用户系统</h2><h3 id="nust-构建前端系统环境"><a href="#nust-构建前端系统环境" class="headerlink" title="nust 构建前端系统环境"></a>nust 构建前端系统环境</h3><h3 id="登录系统"><a href="#登录系统" class="headerlink" title="登录系统"></a>登录系统</h3><ol>
+<li>调用接口登录，返回token字符串</li>
+<li>将token字符串放入cookie中</li>
+<li>创建前端拦截器，判断cookie中是否有token字符串<ul>
+<li>如果有，则放入请求头部</li>
+</ul>
+</li>
+<li>根据token值，调用接口，根据token获取用户信息，以便首页显示<ul>
+<li>把调用接口返回的用户信息放入cookie中</li>
+</ul>
+</li>
+<li>根据返回的用于信息在在首页面显示</li>
+</ol>
+<h3 id="支付系统"><a href="#支付系统" class="headerlink" title="支付系统"></a>支付系统</h3><ol>
+<li>生成订单的接口</li>
+<li>根据订单id查询订单信息</li>
+<li>生成微信支付的二维码</li>
+<li>查询订单支付状态接口</li>
+</ol>
+<h2 id="四-一些问题的出现与解决"><a href="#四-一些问题的出现与解决" class="headerlink" title="四.一些问题的出现与解决"></a>四.一些问题的出现与解决</h2><h3 id="跨域问题"><a href="#跨域问题" class="headerlink" title="跨域问题"></a>跨域问题</h3><p>浏览器从一个域名的网页去请求另一个域名的资源时，域名、端口、协议任一不同，都属于跨域。</p>
 <p>解决方法：</p>
 <ul>
 <li><p>在controller上加上注解</p>
@@ -656,6 +811,11 @@
 </ul>
 <p>最佳实践，采用拦截器的方式</p>
  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Slf</span>4j</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FeignCustomRequestInteceptor</span> <span class="keyword">implements</span> <span class="title">RequestInterceptor</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ObjectMapper objectMapper;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">apply</span><span class="params">(RequestTemplate template)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (HttpMethod.GET.toString() == template.method() &amp;&amp; template.body() != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="comment">//feign 不支持GET方法传输POJO 转换成json，再换成query</span></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                Map&lt;String, Collection&lt;String&gt;&gt; map = objectMapper.readValue(template.bodyTemplate(), <span class="keyword">new</span> TypeReference&lt;Map&lt;String, Collection&lt;String&gt;&gt;&gt;() &#123;</span><br><span class="line"></span><br><span class="line">                &#125;);</span><br><span class="line">                template.body(<span class="keyword">null</span>);</span><br><span class="line">                template.queries(map);</span><br><span class="line">            &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                log.error(<span class="string">"cause exception"</span>, e);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="拦截问题"><a href="#拦截问题" class="headerlink" title="拦截问题"></a>拦截问题</h3><p>使用spring security的时候，需要配置一些请求不被拦截</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 配置哪些请求不拦截</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> web</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">configure</span><span class="params">(WebSecurity web)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    web.ignoring().antMatchers(<span class="string">"/api/**"</span>,</span><br><span class="line">            <span class="string">"/swagger-resources/**"</span>, <span class="string">"/webjars/**"</span>, <span class="string">"/v2/**"</span>, <span class="string">"/swagger-ui.html/**"</span></span><br><span class="line">           );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
@@ -863,7 +1023,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#在线网课系统技术文档"><span class="nav-number">1.</span> <span class="nav-text">在线网课系统技术文档</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-系统设计与功能综述"><span class="nav-number">1.1.</span> <span class="nav-text">一.系统设计与功能综述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#业务模块"><span class="nav-number">1.1.1.</span> <span class="nav-text">业务模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术栈"><span class="nav-number">1.1.2.</span> <span class="nav-text">技术栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#综述"><span class="nav-number">1.1.3.</span> <span class="nav-text">综述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-后台管理系统"><span class="nav-number">1.2.</span> <span class="nav-text">二.后台管理系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#框架与工具"><span class="nav-number">1.2.1.</span> <span class="nav-text">框架与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-MyBatis-Plus"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">1.MyBatis-Plus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-MySQL"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">2.MySQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-SpringBoot"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">3.SpringBoot</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Swagger2"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">4.Swagger2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-统一返回数据格式（自定义）"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">5.统一返回数据格式（自定义）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-logback"><span class="nav-number">1.2.1.6.</span> <span class="nav-text">6.logback</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-ES6，ES5"><span class="nav-number">1.2.1.7.</span> <span class="nav-text">7.ES6，ES5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-Vue"><span class="nav-number">1.2.1.8.</span> <span class="nav-text">8.Vue</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-axios"><span class="nav-number">1.2.1.9.</span> <span class="nav-text">9.axios</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-element-ui"><span class="nav-number">1.2.1.10.</span> <span class="nav-text">10.element-ui</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-Node-js"><span class="nav-number">1.2.1.11.</span> <span class="nav-text">11.Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-vue-element-admin"><span class="nav-number">1.2.1.12.</span> <span class="nav-text">12.vue-element-admin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-nginx"><span class="nav-number">1.2.1.13.</span> <span class="nav-text">13.nginx</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-阿里云OSS"><span class="nav-number">1.2.1.14.</span> <span class="nav-text">14.阿里云OSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15-EasyExcel"><span class="nav-number">1.2.1.15.</span> <span class="nav-text">15.EasyExcel</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16-Tinymce可视化编辑器"><span class="nav-number">1.2.1.16.</span> <span class="nav-text">16.Tinymce可视化编辑器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#17-阿里云视频点播功能"><span class="nav-number">1.2.1.17.</span> <span class="nav-text">17.阿里云视频点播功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18-微服务"><span class="nav-number">1.2.1.18.</span> <span class="nav-text">18.微服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#19-Nacos"><span class="nav-number">1.2.1.19.</span> <span class="nav-text">19.Nacos</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#20-Feign"><span class="nav-number">1.2.1.20.</span> <span class="nav-text">20.Feign</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#21-Hystrix"><span class="nav-number">1.2.1.21.</span> <span class="nav-text">21.Hystrix</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22-spring-cloud-接口配合"><span class="nav-number">1.2.1.22.</span> <span class="nav-text">22.spring cloud 接口配合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#23-Nuxt"><span class="nav-number">1.2.1.23.</span> <span class="nav-text">23.Nuxt</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台管理系统模块化"><span class="nav-number">1.2.2.</span> <span class="nav-text">后台管理系统模块化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-环境搭建"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">1.环境搭建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-service-edu"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">2.service-edu</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-service-oss"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">3.service-oss</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-service-vod"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">4.service-vod</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-前台用户系统"><span class="nav-number">1.3.</span> <span class="nav-text">三.前台用户系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-一些问题的出现与解决"><span class="nav-number">1.4.</span> <span class="nav-text">四.一些问题的出现与解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#跨域问题"><span class="nav-number">1.4.1.</span> <span class="nav-text">跨域问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库加载问题"><span class="nav-number">1.4.2.</span> <span class="nav-text">数据库加载问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于后端xml文件不会自动发布到target文件夹的问题"><span class="nav-number">1.4.3.</span> <span class="nav-text">关于后端xml文件不会自动发布到target文件夹的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于spring，spring-boot，-spring-cloud的关系"><span class="nav-number">1.4.4.</span> <span class="nav-text">关于spring，spring boot， spring cloud的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feign-的GET的多参数传递"><span class="nav-number">1.4.5.</span> <span class="nav-text">Feign 的GET的多参数传递</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#在线网课系统技术文档"><span class="nav-number">1.</span> <span class="nav-text">在线网课系统技术文档</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-系统设计与功能综述"><span class="nav-number">1.1.</span> <span class="nav-text">一.系统设计与功能综述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#业务模块"><span class="nav-number">1.1.1.</span> <span class="nav-text">业务模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术栈"><span class="nav-number">1.1.2.</span> <span class="nav-text">技术栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#综述"><span class="nav-number">1.1.3.</span> <span class="nav-text">综述</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-后台管理系统"><span class="nav-number">1.2.</span> <span class="nav-text">二.后台管理系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#框架与工具"><span class="nav-number">1.2.1.</span> <span class="nav-text">框架与工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-MyBatis-Plus"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">1.MyBatis-Plus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-MySQL"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">2.MySQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-SpringBoot"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">3.SpringBoot</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Swagger2"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">4.Swagger2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-统一返回数据格式（自定义）"><span class="nav-number">1.2.1.5.</span> <span class="nav-text">5.统一返回数据格式（自定义）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-logback"><span class="nav-number">1.2.1.6.</span> <span class="nav-text">6.logback</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-ES6，ES5"><span class="nav-number">1.2.1.7.</span> <span class="nav-text">7.ES6，ES5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-Vue"><span class="nav-number">1.2.1.8.</span> <span class="nav-text">8.Vue</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-axios"><span class="nav-number">1.2.1.9.</span> <span class="nav-text">9.axios</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-element-ui"><span class="nav-number">1.2.1.10.</span> <span class="nav-text">10.element-ui</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-Node-js"><span class="nav-number">1.2.1.11.</span> <span class="nav-text">11.Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-vue-element-admin"><span class="nav-number">1.2.1.12.</span> <span class="nav-text">12.vue-element-admin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-nginx"><span class="nav-number">1.2.1.13.</span> <span class="nav-text">13.nginx</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-阿里云OSS"><span class="nav-number">1.2.1.14.</span> <span class="nav-text">14.阿里云OSS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#15-EasyExcel"><span class="nav-number">1.2.1.15.</span> <span class="nav-text">15.EasyExcel</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16-Tinymce可视化编辑器"><span class="nav-number">1.2.1.16.</span> <span class="nav-text">16.Tinymce可视化编辑器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#17-阿里云视频点播功能"><span class="nav-number">1.2.1.17.</span> <span class="nav-text">17.阿里云视频点播功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18-微服务"><span class="nav-number">1.2.1.18.</span> <span class="nav-text">18.微服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#19-Nacos"><span class="nav-number">1.2.1.19.</span> <span class="nav-text">19.Nacos</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#20-Feign"><span class="nav-number">1.2.1.20.</span> <span class="nav-text">20.Feign</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#21-Hystrix"><span class="nav-number">1.2.1.21.</span> <span class="nav-text">21.Hystrix</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22-spring-cloud-接口配合"><span class="nav-number">1.2.1.22.</span> <span class="nav-text">22.spring cloud 接口配合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#23-Nuxt"><span class="nav-number">1.2.1.23.</span> <span class="nav-text">23.Nuxt</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#24-redis"><span class="nav-number">1.2.1.24.</span> <span class="nav-text">24.redis</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#25-SSO"><span class="nav-number">1.2.1.25.</span> <span class="nav-text">25.SSO</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#26-JWT令牌"><span class="nav-number">1.2.1.26.</span> <span class="nav-text">26.JWT令牌</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#27-OAuth2"><span class="nav-number">1.2.1.27.</span> <span class="nav-text">27.OAuth2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#28-EChatrs"><span class="nav-number">1.2.1.28.</span> <span class="nav-text">28.EChatrs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#29-Canal"><span class="nav-number">1.2.1.29.</span> <span class="nav-text">29.Canal</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#30-Gateway"><span class="nav-number">1.2.1.30.</span> <span class="nav-text">30.Gateway</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#31-Spring-Security"><span class="nav-number">1.2.1.31.</span> <span class="nav-text">31.Spring Security</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#32-Jenkins"><span class="nav-number">1.2.1.32.</span> <span class="nav-text">32.Jenkins</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台管理系统模块化"><span class="nav-number">1.2.2.</span> <span class="nav-text">后台管理系统模块化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-环境搭建"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">1.环境搭建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-service-edu"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">2.service-edu</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-service-oss"><span class="nav-number">1.2.2.3.</span> <span class="nav-text">3.service-oss</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-service-vod"><span class="nav-number">1.2.2.4.</span> <span class="nav-text">4.service-vod</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-service-cms"><span class="nav-number">1.2.2.5.</span> <span class="nav-text">5.service-cms</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-service-msm"><span class="nav-number">1.2.2.6.</span> <span class="nav-text">6.service-msm</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-service-ucenter"><span class="nav-number">1.2.2.7.</span> <span class="nav-text">7.service-ucenter</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-service-order"><span class="nav-number">1.2.2.8.</span> <span class="nav-text">8.service-order</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-service-statistics"><span class="nav-number">1.2.2.9.</span> <span class="nav-text">9.service-statistics</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-service-acl"><span class="nav-number">1.2.2.10.</span> <span class="nav-text">10.service-acl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#11-api-gateway"><span class="nav-number">1.2.2.11.</span> <span class="nav-text">11.api-gateway</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-spring-security"><span class="nav-number">1.2.2.12.</span> <span class="nav-text">12.spring_security</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#13-common-utils"><span class="nav-number">1.2.2.13.</span> <span class="nav-text">13.common-utils</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-前台用户系统"><span class="nav-number">1.3.</span> <span class="nav-text">三.前台用户系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#nust-构建前端系统环境"><span class="nav-number">1.3.1.</span> <span class="nav-text">nust 构建前端系统环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#登录系统"><span class="nav-number">1.3.2.</span> <span class="nav-text">登录系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支付系统"><span class="nav-number">1.3.3.</span> <span class="nav-text">支付系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-一些问题的出现与解决"><span class="nav-number">1.4.</span> <span class="nav-text">四.一些问题的出现与解决</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#跨域问题"><span class="nav-number">1.4.1.</span> <span class="nav-text">跨域问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库加载问题"><span class="nav-number">1.4.2.</span> <span class="nav-text">数据库加载问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于后端xml文件不会自动发布到target文件夹的问题"><span class="nav-number">1.4.3.</span> <span class="nav-text">关于后端xml文件不会自动发布到target文件夹的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于spring，spring-boot，-spring-cloud的关系"><span class="nav-number">1.4.4.</span> <span class="nav-text">关于spring，spring boot， spring cloud的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feign-的GET的多参数传递"><span class="nav-number">1.4.5.</span> <span class="nav-text">Feign 的GET的多参数传递</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拦截问题"><span class="nav-number">1.4.6.</span> <span class="nav-text">拦截问题</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
