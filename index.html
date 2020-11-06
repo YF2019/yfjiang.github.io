@@ -430,7 +430,90 @@
         
           
             <h1 id="在线网课系统技术文档"><a href="#在线网课系统技术文档" class="headerlink" title="在线网课系统技术文档"></a>在线网课系统技术文档</h1><h2 id="一-系统设计与功能综述"><a href="#一-系统设计与功能综述" class="headerlink" title="一.系统设计与功能综述"></a>一.系统设计与功能综述</h2><h3 id="业务模块"><a href="#业务模块" class="headerlink" title="业务模块"></a>业务模块</h3><p><img src="https://yefan-college.oss-cn-shanghai.aliyuncs.com/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/1bb0cd7a29b6b1bcf3c569e2441efcec.png" alt="在线教育系统业务模块"></p>
+<h4 id="课程后端管理系统"><a href="#课程后端管理系统" class="headerlink" title="课程后端管理系统"></a>课程后端管理系统</h4><ol>
+<li>登录功能<ul>
+<li>前期为了测试方便默认账户登录</li>
+<li>后期使用spring security模块进行登录的认证授权。</li>
+<li>使用redis记录登录的缓存信息等</li>
+</ul>
+</li>
+<li>权限管理模块<ul>
+<li>菜单管理</li>
+<li>角色管理，为角色分配菜单</li>
+<li>用户管理，为用户分配角色</li>
+</ul>
+</li>
+<li>讲师管理模块</li>
+<li>课程分类模块<ul>
+<li>使用Excel 添加课程分类数据至数据库</li>
+<li>使用树形结构显示课程分类</li>
+</ul>
+</li>
+<li>课程管理模块<ul>
+<li>课程列表</li>
+<li>添加课程，按照流程，分为添加课程基本信息、添加课程大纲、课程信息确认以及课程发布三个步骤。</li>
+<li>上传课程视频</li>
+</ul>
+</li>
+<li>统计分析模块<ul>
+<li>生成统计数据</li>
+<li>统计数据可视化</li>
+</ul>
+</li>
+</ol>
+<h4 id="课程前台用户系统"><a href="#课程前台用户系统" class="headerlink" title="课程前台用户系统"></a>课程前台用户系统</h4><ol>
+<li>首页数据展示<ul>
+<li>显示幻灯片</li>
+<li>显示热门课程</li>
+<li>显示热门讲师</li>
+</ul>
+</li>
+<li>用户注册与登录<ul>
+<li>获取注册手机验证码</li>
+<li>登录和退出。SSO方式，包括session广播机制、cookie + redis实现、使用token三种方式</li>
+<li>主要使用token方式，用JWT生成token，设置前端拦截器进行获取和传递。</li>
+</ul>
+</li>
+<li>讲师列表与讲师详情</li>
+<li>课程列表与课程详情</li>
+<li>课程视频在线播放</li>
+<li>课程支付<ul>
+<li>使用微信支付，包括生成订单、生成支付二维码与最终支付。</li>
+<li>支付后的状态更新。</li>
+<li></li>
+</ul>
+</li>
+</ol>
 <h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><p><img src="https://yefan-college.oss-cn-shanghai.aliyuncs.com/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/7509966.png" alt=""></p>
+<h4 id="前端展示"><a href="#前端展示" class="headerlink" title="前端展示"></a>前端展示</h4><ol>
+<li>vue</li>
+<li>element-ui</li>
+<li>node.js</li>
+<li>npm</li>
+<li>babel</li>
+<li>vue-admin-template</li>
+<li>nuxt</li>
+<li>echarts</li>
+</ol>
+<h4 id="后端实现"><a href="#后端实现" class="headerlink" title="后端实现"></a>后端实现</h4><ol>
+<li>Spring Boot</li>
+<li>Spring cloud<ul>
+<li>nacos</li>
+<li>feign</li>
+<li>hystrix</li>
+<li>gateway网关</li>
+</ul>
+</li>
+<li>nginx</li>
+<li>MybatisPlus</li>
+<li>EasyExcel</li>
+<li>Spring Security</li>
+<li>redis</li>
+<li>OAuth2 + JWT</li>
+<li>cookie</li>
+<li>阿里云OSS，视频点播，短信服务</li>
+<li>docker + Jenkins</li>
+</ol>
 <h3 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h3><p>对一些技术进行入门级的使用和理解罢了</p>
 <h2 id="二-后台管理系统"><a href="#二-后台管理系统" class="headerlink" title="二.后台管理系统"></a>二.后台管理系统</h2><h3 id="框架与工具"><a href="#框架与工具" class="headerlink" title="框架与工具"></a>框架与工具</h3><h4 id="1-MyBatis-Plus"><a href="#1-MyBatis-Plus" class="headerlink" title="1.MyBatis-Plus"></a>1.MyBatis-Plus</h4><p>本项目主要使用的<a href="https://baomidou.com/" target="_blank" rel="noopener">MyBatis-Plus</a>功能：</p>
 <ul>
@@ -685,7 +768,7 @@
 <p>如果系统的模块众多，每个模块都需要就行授权与认证，所以本项目选择基于token的形式进行授权与认证</p>
 <ol>
 <li>用户根据用户名密码认证成功，然后获取当前用户角色的一系列权限值，并以用户名为key，权限列表为value的形式存入redis缓存中，根据用户名相关信息生成token返回</li>
-<li>浏览器将token记录到cookie中，每次调用api接口都默认将token携带到header请求头中</li>
+<li>浏览器将token记录到cookie中，每次调用api接口都默认将token携带到headver请求头中</li>
 <li>Spring-security解析header头获取token信息，解析token获取当前用户名，根据用户名就可以从redis中获取权限列表，这样Spring-security就能够判断当前请求是否有权限访问</li>
 </ol>
 <h4 id="32-Jenkins"><a href="#32-Jenkins" class="headerlink" title="32.Jenkins"></a>32.Jenkins</h4><p>自动部署项目</p>
